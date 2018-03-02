@@ -89,8 +89,7 @@
                       (org-babel-read (org-entry-get nil "package" t))))
          (body (if main-p (org-babel-go-ensure-main-wrap body) body))
          )
-    (org-babel-go-custom-vars (org-babel-go-custom-imports (org-babel-go-ensure-package body package)
-                                                           imports)
+    (org-babel-go-custom-vars body 	;; disable idiotic package wrapping around each tangled source block
                               vars)))
 
 (defun org-babel-execute:go (body params)
