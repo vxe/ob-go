@@ -1,5 +1,7 @@
 #+TITLE: Readme
-
+This is literally the same package except without the aggravating
+feature insisting on wrapping each src block in a package or main
+function. 
 * Introduction
 
   =ob-go= enables [[http://orgmode.org/worg/org-contrib/babel/intro.html][Org-Babel]] support for evaluating [[http://golang.org/][go]] code. It was
